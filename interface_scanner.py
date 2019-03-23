@@ -6,9 +6,9 @@ Endereco IP; Endereco MAC; Empresa que possui o endereco MAC; E portas abertas d
 cada host da rede.
 
 Example:
-    Para executar o codigo, basta utiliza-lo como argumento do interpretador python:
+    Para executar o codigo, basta utiliza-lo como argumento do interpretador python (como superuser):
 
-        $ python interface_scanner.py
+        $ sudo python interface_scanner.py
 
 Todo:
     * 
@@ -101,8 +101,7 @@ if __name__ == '__main__':
     interface = input("[*] Interface: ")
 
     # Range de IPs a serem escaneados
-    ips = "192.168.2.0/24"
-    print("[*] Range of IPs: 192.168.2.0/24")
+    ips = input("[*] Range of IPs: ")
 
     # Inicio do escaneamento
     #   Marcacao temporal do inicio do escaneamento
